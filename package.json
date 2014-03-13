@@ -1,0 +1,30 @@
+{
+  "name": "grunt-multi-servers",
+  "version": "0.0.1",
+  "description": "this plugin can launch multi servers ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yosuke-furukawa/grunt-multi-servers.git"
+  },
+  "keywords": [
+    "grunt",
+    "server",
+    "multi-server"
+  ],
+  "author": "yosuke-furukawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yosuke-furukawa/grunt-multi-servers/issues"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {
+    "grunt-mocha-test": "~0.9.4",
+    "expect.js": "~0.3.1"
+  }
+}
