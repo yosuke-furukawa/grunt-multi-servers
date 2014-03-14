@@ -1,6 +1,8 @@
 grunt-multi-servers
 ===================
 
+[![Build Status](https://travis-ci.org/yosuke-furukawa/grunt-multi-servers.png?branch=master)](https://travis-ci.org/yosuke-furukawa/grunt-multi-servers)
+
 This plugin can launch multiple servers.
 
 ## Getting Started
