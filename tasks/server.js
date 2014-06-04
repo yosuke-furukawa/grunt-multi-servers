@@ -6,6 +6,7 @@ module.exports = function(grunt) {
     args : [],
     ports : [3000],
     signal : "SIGTERM",
+    keepalive: false,
     opts :{ stdio : ['ignore', process.stdout, process.stderr] }
   };
   var _ = require("lodash");
@@ -33,6 +34,7 @@ module.exports = function(grunt) {
       var args = this.data.args || defaults.args;
       var ports = this.data.ports || defaults.ports;
       var opts = this.data.opts || defaults.opts;
+      var keepalive = this.data.keepalive || defaults.keepalive;
       signal = this.data.signal || defaults.signal;
       console.log(cmd + " " + args);
       if (!args.length) grunt.fail.fatal("args must specify.");
@@ -46,7 +48,7 @@ module.exports = function(grunt) {
           process.on('exit', stop);
           servers.push(new_server);
       });
-      if (arg != 'keepalive') {
+      if (!keepalive) {
           setTimeout(function(){done();}, 1000);
       }
   });
