@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       test: {
         cmd: "node",
         args: ["test/fixture/hello.js"],
-        ports: [3000, 3001, 3002]
+        ports: [3000, 3001, 3002],
       }
     },
     mochaTest: {

@@ -34,12 +34,10 @@ grunt.loadNpmTasks('grunt-multi-servers');
         args: ["test/fixture/hello.js"],
         // port settings
         ports: [3000, 3001, 3002],
-        // options for childprocess, default is ↓
-        opts :{ stdio : ['ignore', process.stdout, process.stderr] },
-        // kill signal default is SIGTERM
-        signal : "SIGTERM",
+        // keepalive default is false
+        keepalive: false,
       }
-    };
+    }
   });
   grunt.loadNpmTasks('grunt-multi-servers');
 ```
